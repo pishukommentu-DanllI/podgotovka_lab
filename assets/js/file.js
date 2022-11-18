@@ -110,3 +110,18 @@ function slide_12() {
 
     reg.style.display = 'none';
 }
+
+
+
+let timer = () => {
+    document.querySelector('.contaner_block_BlockInput_inputranges_text').textContent = `Чел. ${document.querySelector('.contaner_block_BlockInput_InputRange').value}`    
+    document.querySelector('.contaner_block_BlockInput_inputranges_text_2').textContent = `Кол. ${document.querySelector('.contaner_block_BlockInput_InputRange_2').value}`    
+    setTimeout(() => {
+        timer();
+    }, 10);
+};
+
+timer()
+
+
+

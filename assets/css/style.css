@@ -246,7 +246,7 @@ a{
     position: absolute;
     z-index: 10;
     right: 76px;
-    top: 746px;
+    top: 1269px;
     background: #FDFDFF;
 }
 
@@ -325,4 +325,54 @@ a{
     text-align: center;
 
     color: rgba(0, 0, 0, 0.5);
+}
+
+.contaner_block{
+    background-color: rgb(230, 241, 163);
+}
+.contaner_block_BlockInput{
+    display: flex;
+
+}
+.contaner_block__MainText{
+    margin-right: 8px;
+}
+
+.contaner_block__select{
+    padding: 5px;
+    background-color: rgb(201, 218, 91);
+}
+
+.contaner_10{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contaner_block_BlockInput{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.contaner_block_BlockInput_inputranges{
+    display: flex;
+    gap: 7px;
+}
+
+.contaner_block_BlockInputAndText_input_block{
+    margin-bottom: 8px;
+}
+.contaner_block__select_option{
+    font-family: 'bold';
+    background-color: rgb(201, 218, 91);
+    
+}
+.contaner_block_BlockInputAndText_input{
+    display: flex;
+    flex-direction: column;
+}
+.contaner_block_BlockInputAndText{
+    display: flex;
+}
+.contaner_block_BlockInput_InputRadio{
+    color: aqua;
 }

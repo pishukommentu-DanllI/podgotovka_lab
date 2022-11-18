@@ -71,8 +71,53 @@
             <input type="button" onclick="getOptions()" value="Count and Output all items">
         </form>
         
-
     
+    <br><br><br><br><br>
+    <div class="contaner_10">
+        <div class="contaner_block">
+            <div class="contaner_block_BlockInput">
+
+                <p class="contaner_block__MainText">Вид деятельности</p>
+                <select class="contaner_block__select">
+                    <option class="contaner_block__select_option">Услуги</option>
+                    <option class="contaner_block__select_option">Что-то еще</option>
+                </select>
+
+            </div>
+
+            <div class="contaner_block_BlockInput">
+                <p class="contaner_block__MainText">Ввод первичной документации в 1c</p>
+                <div class="contaner_block_BlockInputAndText_input">
+                    <div class="contaner_block_BlockInputAndText_input_block">
+                        <label for="input_1">Бухгалтер Бизнес-Аналитики</label>
+                        <input type="radio" name="radiobutton" class="contaner_block_BlockInput_InputRadio" id="input_1">
+                    </div>
+                    <div class="contaner_block_BlockInputAndText_input_block">
+                        <label for="input_2">Сам через удалееный доступ</label>
+                        <input type="radio" id="input_2" name="radiobutton" class="contaner_block_BlockInput_InputRadio">
+                    </div>
+                </div>
+            </div>
+
+            <div class="contaner_block_BlockInput">
+                <p class="contaner_block__MainText">Количество сотрудников</p>
+                <div class="contaner_block_BlockInput_inputranges">
+                    <input type="range" min="0" max="50" step="1" value="25" class="contaner_block_BlockInput_InputRange">
+                    <p class="contaner_block_BlockInput_inputranges_text"></p>
+                </div>
+                
+
+                <p class="contaner_block__MainText">Количество операции: </p>
+                <div class="contaner_block_BlockInput_inputranges">
+                    <input type="range" min="0" max="100" step="1" value="50" class="contaner_block_BlockInput_InputRange_2">
+                    <p class="contaner_block_BlockInput_inputranges_text_2"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+
     <!-- 11 слайд -->
     <div class="block_11">
         <table id="myTable11" border="1">
