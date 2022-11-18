@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css"> 
+    <title>Подготовка к лабораторной работе</title>
+</head>
+<body>
+    <p id ='text'>Простое задание по JS</p> 
+    <div>
+        <button id="jsstyle"
+        onclick="js_style()">Style</button>
+    </div>
+
+    <form id="form1" onsubmit="getFormvalue(); return false">
+        First name: <input type="text" name="fname" value="David"><br>
+        Last name: <input type="text" name="lname" value="Beckham"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <p><a id="w3r" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="https://learn.javascript.ru"></a></p>
+    <button onclick="getAttributes()">Click here to get  attributes value</button>
+        
+    <table id="sampleTable" border="1">
+        <tr><td>Row1 cell1</td><td>Row1 cell2</td></tr>
+        <tr><td>Row2 cell1</td><td>Row2 cell2</td></tr>
+    </table><br>
+        <input type="button" onclick="insert_Row()" value="Insert row">         
+        <br><br><br>
+
+        <!-- <table id="myTable" border="1">
+            <tr class="table_tr"><td class="table_td">Row1 cell1</td><td class="table_td">Row1 cell2</td></tr>
+            <tr class="table_tr"><td class="table_td">Row2 cell1</td><td class="table_td">Row2 cell2</td></tr>
+            <tr class="table_tr"><td class="table_td">Row3 cell1</td><td class="table_td">Row3 cell2</td></tr>
+        </table>
+        <form>
+            <input type="button" onclick="changeContent()" value="Change content">
+        </form> -->
+        
+
+
+        <table id="myTable" border="1">
+        </table>
+        <form>
+            <input type="button" onclick="createTable()" value="Create the table">
+        </form>
+        <br><br>
+
+        <form>
+            <select id="colorSelect">
+            <option>Red</option>
+            <option>Green</option>
+            <option>White</option>
+            <option>Black</option>
+            </select>
+            <input type="button" onclick="removecolor()" value="Select and Remove">
+        </form>
+        <br><br>
+
+
+        <form>
+            Select your favorite Color :
+            <select id="mySelect">
+            <option>Red</option>
+            <option>Green</option>
+            <option>Blue</option>
+            <option>White</option> 	
+            </select>
+            <input type="button" onclick="getOptions()" value="Count and Output all items">
+        </form>
+        
+
+    
+    <!-- 11 слайд -->
+    <div class="block_11">
+        <table id="myTable11" border="1">
+            <tr>
+                <td class="myTable11_td">
+                    <div class="myTable11_block">
+                        Имя
+                    </div>
+                </td>
+                <td class="myTable11_td">
+                    <div class="myTable11_block">
+                        Фамилия
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+        <br>
+
+        <form id="form_11" onsubmit="return false">
+            <input type="text" value="Имя" name="name">
+            <input value="Фамилия" name="suname">
+            <button type="submit" value="Submit" onclick="send_form_table()"> Записать</button>
+        </form>
+        <br>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+    
+    <header class="header">
+        <div class="header__contaner">
+        <div class="header__contaner__BlockLogo">
+            <img src="./assets/img/Group.svg">
+        </div>
+
+        <nav class="header__contaner__nav">
+            <ul class="header__contaner__nav__list">
+                <li class="header__contaner__nav_item">
+                    
+                    <a href="#" class="header__contaner__nav_item_link white_first">Games</a>
+                    <button class="header__contaner__nav_item_btn"><img src="./assets/img/Shape.svg"></button>
+                </li>
+
+                <li class="header__contaner__nav_item">
+                    
+                    <a href="#" class="header__contaner__nav_item_link ">Consoles</a>
+                    <button class="header__contaner__nav_item_btn"><img src="./assets/img/Shape.svg"></button>
+                </li>
+
+                <li class="header__contaner__nav_item">
+                    
+                    <a href="#" class="header__contaner__nav_item_link ">Community</a>
+                </li>
+
+                <li class="header__contaner__nav_item">
+                    
+                    <input type="text" placeholder="Search" class="header__contaner__nav_item_input input">
+                </li>
+
+                <li class="header__contaner__nav_item">
+                    <div class="header__contaner__nav_item__BlokcImg">
+                        <img class="header__contaner__nav_item__Img" src="./assets/img/user.svg">
+                    </div>
+                    <a class="header__contaner__nav_item_link " onclick="slide_12()">My XBOX</a>
+
+                    <button class="header__contaner__nav_item_btn"><img src="./assets/img/Shape.svg"></button>
+                </li>
+
+            </ul>
+
+            <div class="contaner" id="contaner_registr" style="display: none;"> 
+                <div class="contaner__MainBlock">
+                    <p class="contaner__MainText roboto">Registration</p>
+                </div>
+                <!-- создание формы -->
+                <form class="contaner__from">
+                    <input type="text" placeholder="Name" class="contaner__from__name input roboto">
+                    <input type="tel" placeholder="Phone" class="contaner__from__phone input roboto">
+                    <input type="email" placeholder="E-mail" class="contaner__from__email input roboto">
+                    <input type="password" placeholder="Password" class="contaner__from__password input roboto">
+                    
+                    <a href="./index.html" class="contaner__from__BtnSend roboto">Send</a>
+                    <a href="#" class="contaner__from__BtnLog roboto">Log in</a>
+                </form>
+            </div>
+
+            <ul class="header__contaner__nav_ListBugrger">
+
+                <li class="header__contaner__nav_ItemBugrger ">
+                    <input type="text" placeholder="Search" class="header__contaner__nav_ItemBugrger_input input">
+                </li>
+
+                <li class="header__contaner__nav_ItemBugrger">
+                    <div class="header__contaner__nav_ItemBugrger__BlockImgBurger"><img src="./assets/img/burger.png"></div>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <section class="one">
+        <div class="one__contaner">
+            <div class="one__contaner__BlockImgArrow left"><button type="button"><img class="one__contaner__Arrow left" src="./assets/img/icon-prev.svg"></button></div>
+
+
+            <div class="one__contaner__BlockInfo">
+                <p class="one__contaner__Blockinfo__MainText white TextHelveticaNeue">Star Wars</p>
+                <p class="one__contaner__Blockinfo__Text white TextHelveticaNeue">Battlefront II</p>
+
+                <div class="one__contaner__BlockInfo__Btn">
+                    <a href="#" class="one__contaner__Btn green_btn litle_btn white TextHelveticaNeue">Watch Trailer</a>
+                    <a href="#" class="one__contaner__Btn grow_btn litle_btn white TextHelveticaNeue">Explore Games</a>
+                </div>
+
+            </div>
+            <div class="one__contaner__BlockImgArrow right"><button type="button"><img class="one__contaner__Arrow left" src="./assets/img/icon-next.svg"></button></div>
+            
+        </div>
+    </section>
+    <script src="./assets/js/file.js"></script>
+</body>
+</html>
